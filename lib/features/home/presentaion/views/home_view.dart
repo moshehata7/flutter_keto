@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:keto_app/features/calories/presentation/views/calories_view.dart';
+import 'package:keto_app/features/macros/presentation/views/macros_view.dart';
+import 'package:keto_app/features/recipes/presentation/views/recipes_view.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -12,8 +15,8 @@ class _HomeViewState extends State<HomeView> {
 final List<Widget> pages = [
     HomeView(),
     RecipesView(),
-   CaloriesCalculatorView(),
-   MacrosDetailsView()
+   CaloriesView(),
+   MacrosView()
     ];
   int currentIndex = 0;
   @override
