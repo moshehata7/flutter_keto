@@ -27,17 +27,23 @@ class RecipeCategory extends StatelessWidget {
         child: SizedBox(
           height: 200,
           width: 200,
-          child: Stack(children: [
-            Positioned(
+          child: Stack(
+            children: [
+            ClipRRect(
+              borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
               child: Image.asset(
                 fit: BoxFit.fill,
-                recipesCategory.image)),
-             Positioned(
-              top: 170,
-              left: 30,
-              child: Text(recipesCategory.recipeName,style: TextStyle(
-                fontSize: 35
-              ),))]),
+                recipesCategory.image),
+            ),
+             Align(
+              alignment: Alignment.bottomCenter,
+               child: Padding(
+                 padding: const EdgeInsets.only(bottom: 16),
+                 child: Text(recipesCategory.recipeName,style: TextStyle(
+                    fontSize: 30
+                  ),),
+               ),
+             )]),
         ),
       ),
     );
