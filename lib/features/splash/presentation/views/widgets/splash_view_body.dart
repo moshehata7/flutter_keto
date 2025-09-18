@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:keto_app/features/home/presentaion/views/home_view.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -39,10 +39,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset("assets/images/ketozone.png", height: 200),
-                  SizedBox(height: 15,),
-                  Center(child: CircularProgressIndicator(
-                    color: Colors.black,
-                  )),
+                  SizedBox(height: 15),
+                  Center(child: CircularProgressIndicator(color: Colors.black)),
                 ],
               ),
             );
@@ -66,7 +64,14 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateToHome() {
     Future.delayed(Duration(seconds: 3), () {
-      GoRouter.of(context).push('/homeView');
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) {
+            return HomeView();
+          },
+        ),
+      );
     });
   }
 }
