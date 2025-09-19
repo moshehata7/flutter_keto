@@ -16,27 +16,22 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-final List<Widget> pages = [
+  bool isPressed = false;
+  final List<Widget> pages = [
     HomeViewBody(),
     RecipesView(),
-   BlocProvider(
-    create: (context) => CaloriesCubit(),
-    child: CaloriesView()),
-   BlocProvider(
-    create: (context) => MacrosCubit(),
-    child: MacrosView())
-    ];
+    BlocProvider(create: (context) => CaloriesCubit(), child: CaloriesView()),
+    BlocProvider(create: (context) => MacrosCubit(), child: MacrosView()),
+  ];
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IndexedStack(
-      index: currentIndex,
-      children: pages 
-      ),
+      body: IndexedStack(index: currentIndex, children: pages),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        fixedColor: Colors.white,
+        selectedItemColor: Colors.green,
+        unselectedItemColor: Colors.white,
         currentIndex: currentIndex,
         onTap: (value) {
           setState(() {
@@ -45,24 +40,21 @@ final List<Widget> pages = [
         },
         items: [
           BottomNavigationBarItem(
-            
-    icon: FaIcon(FontAwesomeIcons.houseChimney,color: Colors.white),
-    label: "الرئيسية",
-  ),
-  BottomNavigationBarItem(
-    icon: FaIcon(FontAwesomeIcons.kitchenSet,color: Colors.white),
-    label: "الوصفات",
-  ),
-  BottomNavigationBarItem(
-    icon: FaIcon(FontAwesomeIcons.calculator,color: Colors.white),
-    label: "احسب سعراتك"
-  ),
-  BottomNavigationBarItem(
-    icon: FaIcon(FontAwesomeIcons.book,color: Colors.white),
-    label: "اعرف نسبك ",
-    
-    
-  ),
+            icon: FaIcon(FontAwesomeIcons.houseChimney),
+            label: "الرئيسية",
+          ),
+          BottomNavigationBarItem(
+            icon: FaIcon(FontAwesomeIcons.kitchenSet),
+            label: "الوصفات",
+          ),
+          BottomNavigationBarItem(
+            icon: FaIcon(FontAwesomeIcons.calculator),
+            label: "احسب سعراتك",
+          ),
+          BottomNavigationBarItem(
+            icon: FaIcon(FontAwesomeIcons.book),
+            label: "اعرف نسبك ",
+          ),
         ],
       ),
     );

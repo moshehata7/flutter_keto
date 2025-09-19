@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:keto_app/features/home/presentaion/views/category_view.dart';
+import 'package:keto_app/features/home/presentaion/views/settings_view.dart';
 import 'package:keto_app/features/home/presentaion/views/widgets/home_category.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -13,7 +14,19 @@ class HomeViewBody extends StatelessWidget {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 8.0),
-            child: IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+            child: IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return SettingsView();
+                    },
+                  ),
+                );
+              },
+              icon: Icon(Icons.settings),
+            ),
           ),
         ],
       ),
@@ -53,7 +66,8 @@ class HomeViewBody extends StatelessWidget {
                       );
                     },
                     hight: 120,
-                    image: "images/IntermittentFasting_final-0b2134c18e154613b64a21a48b5b0114.jpg",
+                    image:
+                        "images/IntermittentFasting_final-0b2134c18e154613b64a21a48b5b0114.jpg",
                   ),
                 ),
                 Expanded(
@@ -91,8 +105,7 @@ class HomeViewBody extends StatelessWidget {
                       );
                     },
                     hight: 120,
-                    image:
-                        "images/tamreen.jpg",
+                    image: "images/tamreen.jpg",
                   ),
                 ),
                 Expanded(

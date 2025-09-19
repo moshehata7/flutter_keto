@@ -11,18 +11,18 @@ class RecipeViewBody extends StatefulWidget {
 
 class _RecipeViewBodyState extends State<RecipeViewBody> {
   final List<RecipesCategory> recipes = [
-    RecipesCategory(1,"images/ideal-protein-diet-VA-768x512.jpg", "فاصوليا باللحم"),
-    RecipesCategory(2,"images/ideal-protein-diet-VA-768x512.jpg", "بيتزا للفطار"),
-    RecipesCategory(3,"images/ideal-protein-diet-VA-768x512.jpg", "فاهيتا لحم"),
-    RecipesCategory(4,"images/ideal-protein-diet-VA-768x512.jpg", "كوكيز كيتو"),
-    RecipesCategory(5,"images/ideal-protein-diet-VA-768x512.jpg", "خبز قريش"),
-    RecipesCategory(6,"images/ideal-protein-diet-VA-768x512.jpg", "خبز سمسم"),
-    RecipesCategory(7,"images/ideal-protein-diet-VA-768x512.jpg", "مسقعة كيتو"),
-    RecipesCategory(8,"images/ideal-protein-diet-VA-768x512.jpg", "بشاميل كيتو"),
-    RecipesCategory(9,"images/ideal-protein-diet-VA-768x512.jpg", "كريب حلو"),
-    RecipesCategory(10,"images/ideal-protein-diet-VA-768x512.jpg", "محشي كيتو"),
-    RecipesCategory(11,"images/ideal-protein-diet-VA-768x512.jpg", "كفتة لحم"),
-    RecipesCategory(12,"images/ideal-protein-diet-VA-768x512.jpg", "كيك شيكولاتة"),
+    RecipesCategory(1,"images/basolia.jpg", "فاصوليا باللحم"),
+    RecipesCategory(2,"images/pizza.jpg", "بيتزا للفطار"),
+    RecipesCategory(3,"images/fahita.jpg", "فاهيتا لحم"),
+    RecipesCategory(4,"images/15-Featured-healthy.jpg", "كوكيز كيتو"),
+    RecipesCategory(5,"images/khobzkresh.jpg", "خبز قريش"),
+    RecipesCategory(6,"images/khobz.jpg", "خبز سمسم"),
+    RecipesCategory(7,"images/meskaa.jpg", "مسقعة كيتو"),
+    RecipesCategory(8,"images/photo.jpg", "بشاميل كيتو"),
+    RecipesCategory(9,"images/crepe.jpg", "كريب حلو"),
+    RecipesCategory(10,"images/mahshi.jpg", "محشي كيتو"),
+    RecipesCategory(11,"images/kofta.jpg", "كفتة لحم"),
+    RecipesCategory(12,"images/Cake_1.webp", "كيك شيكولاتة"),
   ];
   @override
   Widget build(BuildContext context) {

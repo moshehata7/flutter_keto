@@ -31,16 +31,20 @@ class RecipeCategory extends StatelessWidget {
             children: [
             ClipRRect(
               borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-              child: Image.asset(
-                fit: BoxFit.fill,
-                recipesCategory.image),
+              child: SizedBox(
+                height: 170,
+                width: 240,
+                child: Image.asset(
+                  fit: BoxFit.fill,
+                  recipesCategory.image),
+              ),
             ),
              Align(
               alignment: Alignment.bottomCenter,
                child: Padding(
                  padding: const EdgeInsets.only(bottom: 16),
                  child: Text(recipesCategory.recipeName,style: TextStyle(
-                    fontSize: 30
+                    fontSize: 25
                   ),),
                ),
              )]),
