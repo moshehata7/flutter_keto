@@ -4,6 +4,7 @@ import 'package:keto_app/features/recipes/presentation/views/recipe_details_view
 
 class RecipeCategory extends StatelessWidget {
   const RecipeCategory({super.key, required this.recipesCategory});
+
   final RecipesCategory recipesCategory;
 
   @override
@@ -23,31 +24,32 @@ class RecipeCategory extends StatelessWidget {
         elevation: 10,
         shadowColor: Colors.black.withOpacity(0.8),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20)),
-        child: SizedBox(
-          height: 200,
-          width: 200,
-          child: Stack(
-            children: [
-            ClipRRect(
-              borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+          borderRadius: BorderRadius.circular(20),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Expanded(
+              flex: 2,
               child: SizedBox(
-                height: 170,
-                width: 240,
+                width: double.infinity,
                 child: Image.asset(
-                  fit: BoxFit.fill,
-                  recipesCategory.image),
+                  fit: BoxFit.cover,
+                  recipesCategory.image,
+                ),
               ),
             ),
-             Align(
-              alignment: Alignment.bottomCenter,
-               child: Padding(
-                 padding: const EdgeInsets.only(bottom: 16),
-                 child: Text(recipesCategory.recipeName,style: TextStyle(
-                    fontSize: 25
-                  ),),
-               ),
-             )]),
+            Flexible(
+              child: Padding(
+                padding: EdgeInsets.only(bottom: 8.0),
+                child: Text(
+                  recipesCategory.recipeName,
+                  style: TextStyle(fontSize: 25),
+                ),
+              ),
+            )
+          ],
         ),
       ),
     );

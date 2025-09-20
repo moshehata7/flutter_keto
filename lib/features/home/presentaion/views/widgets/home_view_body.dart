@@ -48,7 +48,7 @@ class HomeViewBody extends StatelessWidget {
               },
               hight: 150,
               width: double.infinity,
-              image: "images/Keto.jpg",
+              image: "assets/images/Keto.jpg",
             ),
             Row(
               children: [
@@ -67,7 +67,7 @@ class HomeViewBody extends StatelessWidget {
                     },
                     hight: 120,
                     image:
-                        "images/IntermittentFasting_final-0b2134c18e154613b64a21a48b5b0114.jpg",
+                        "assets/images/IntermittentFasting_final-0b2134c18e154613b64a21a48b5b0114.jpg",
                   ),
                 ),
                 Expanded(
@@ -84,7 +84,7 @@ class HomeViewBody extends StatelessWidget {
                       );
                     },
                     hight: 120,
-                    image: "images/ideal-protein-diet-VA-768x512.jpg",
+                    image: "assets/images/ideal-protein-diet-VA-768x512.jpg",
                   ),
                 ),
               ],
@@ -105,7 +105,7 @@ class HomeViewBody extends StatelessWidget {
                       );
                     },
                     hight: 120,
-                    image: "images/tamreen.jpg",
+                    image: "assets/images/tamreen.jpg",
                   ),
                 ),
                 Expanded(
@@ -122,7 +122,7 @@ class HomeViewBody extends StatelessWidget {
                       );
                     },
                     hight: 120,
-                    image: "images/books.jpg",
+                    image: "assets/images/books.jpg",
                   ),
                 ),
               ],

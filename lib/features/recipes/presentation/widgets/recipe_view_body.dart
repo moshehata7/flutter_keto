@@ -11,18 +11,18 @@ class RecipeViewBody extends StatefulWidget {
 
 class _RecipeViewBodyState extends State<RecipeViewBody> {
   final List<RecipesCategory> recipes = [
-    RecipesCategory(1,"images/basolia.jpg", "فاصوليا باللحم"),
-    RecipesCategory(2,"images/pizza.jpg", "بيتزا للفطار"),
-    RecipesCategory(3,"images/fahita.jpg", "فاهيتا لحم"),
-    RecipesCategory(4,"images/15-Featured-healthy.jpg", "كوكيز كيتو"),
-    RecipesCategory(5,"images/khobzkresh.jpg", "خبز قريش"),
-    RecipesCategory(6,"images/khobz.jpg", "خبز سمسم"),
-    RecipesCategory(7,"images/meskaa.jpg", "مسقعة كيتو"),
-    RecipesCategory(8,"images/photo.jpg", "بشاميل كيتو"),
-    RecipesCategory(9,"images/crepe.jpg", "كريب حلو"),
-    RecipesCategory(10,"images/mahshi.jpg", "محشي كيتو"),
-    RecipesCategory(11,"images/kofta.jpg", "كفتة لحم"),
-    RecipesCategory(12,"images/Cake_1.webp", "كيك شيكولاتة"),
+    RecipesCategory(1,"assets/images/basolia.jpg", "فاصوليا باللحم"),
+    RecipesCategory(2,"assets/images/pizza.jpg", "بيتزا للفطار"),
+    RecipesCategory(3,"assets/images/fahita.jpg", "فاهيتا لحم"),
+    RecipesCategory(4,"assets/images/15-Featured-healthy.jpg", "كوكيز كيتو"),
+    RecipesCategory(5,"assets/images/khobzkresh.jpg", "خبز قريش"),
+    RecipesCategory(6,"assets/images/khobz.jpg", "خبز سمسم"),
+    RecipesCategory(7,"assets/images/meskaa.jpg", "مسقعة كيتو"),
+    RecipesCategory(8,"assets/images/photo.jpg", "بشاميل كيتو"),
+    RecipesCategory(9,"assets/images/crepe.jpg", "كريب حلو"),
+    RecipesCategory(10,"assets/images/mahshi.jpg", "محشي كيتو"),
+    RecipesCategory(11,"assets/images/kofta.jpg", "كفتة لحم"),
+    RecipesCategory(12,"assets/images/Cake_1.webp", "كيك شيكولاتة"),
   ];
   @override
   Widget build(BuildContext context) {

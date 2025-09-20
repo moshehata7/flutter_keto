@@ -11,9 +11,10 @@ class KetoDietApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      locale: Locale("ar"),
+      title: "Keto Diet App",
       theme: ThemeData.dark(),
       home: SplashView(),
-      
     );
   }
 }
